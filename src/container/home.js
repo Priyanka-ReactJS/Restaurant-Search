@@ -10,7 +10,7 @@ const Home = (prop) => {
     const [city, setCity] = useState()
     const [params, setParams] = useState()
     const [flag, setFlag] = useState(false)
-    const [visible, setVisible] = useState()
+    
     const inputRef = useRef(null);
 
     const handleChange = (event) => {
@@ -50,16 +50,7 @@ const Home = (prop) => {
     const handleChangeParams = (event) => {
         setParams(event.target.value);
     }
-    const openModal = () => {
-        setVisible(true)
-    }
-
-    const closeModal = () => {
-        setVisible(false)
-    }
-
     return (
-
         <form onSubmit={handleSubmit}>
             <div>
                 <div className="jumbotron jumbotron-billboard text-center">
@@ -108,9 +99,6 @@ const Home = (prop) => {
                                                 <span> <strong className="text-primary cuisines">CUISINES: </strong>:{restaurant.restaurant.cuisines}</span>
                                             </p>
                                             <br />
-                                            <div>
-                                                <input className="button4 button5" type="button" value="See More Details" onClick={openModal} />
-                                            </div>
                                             <hr />
                                         </div>
                                     )
