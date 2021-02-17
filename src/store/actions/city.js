@@ -26,10 +26,10 @@ export const fetchRestaurantState = () => {
   };
 };
 
-export const fetchRestaurantSuccess = (entity_id) => {
+export const fetchRestaurantSuccess = (restaurantList) => {
   return {
     type: actionType.RESTAURANT_LIST_SUCCESS,
-    value: entity_id
+    value: restaurantList
   };
 };
 

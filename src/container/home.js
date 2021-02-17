@@ -61,10 +61,10 @@ const Home = (prop) => {
                         </div>
                         <div className="row mx-auto well col-lg-12 mt-5">
                             <div className="col-xs-12 pr-0">
-                                <Input id="getCity" value={city} onChange={handleChange} type="text" placeholder="City" arialabel="Type City" autoFocus />
+                                <Input id="getCity" value={city} onChange={handleChange} type="text" placeholder="City" aria-label="Type City" autoFocus />
                             </div>
                             <div className="col-xs-12 pl-0 pr-0">
-                                <Input id="searchParams" value={params} onChange={handleChangeParams} type="text" placeholder="Restaurant" arialabel="Search for Restaurant" />
+                                <Input id="searchParams" value={params} onChange={handleChangeParams} type="text" placeholder="Restaurant" aria-label="Search for Restaurant" />
                             </div>
                             <div className="col-xs-12 pl-0 pr-0">
                                 <button aria-label="Search" type="submit" className="btn btn-success col-xs-2 searchButton">Search</button>
